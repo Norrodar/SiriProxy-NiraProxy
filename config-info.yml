@@ -6,3 +6,7 @@
     
     - name: 'NiraProxy'
       git: 'git://github.com/Niranda/SiriProxy-NiraProxy.git'
+      auth_level: '0'
+      user_id: 'default'
+      user_secret: 'default'
+      remind_on_update: true
