@@ -8,6 +8,11 @@ How it works
 --------------------------------------------------
 The NiraProxy plugin for [SiriProxy](https://github.com/plamoni/SiriProxy) forwards an inquiry-string to the [NiraProxy](http://proxy.niranda.net)-API. The request is being processed, information is being gathered and an answer is sent back to the [SiriProxy](https://github.com/plamoni/SiriProxy)
 
+How to install
+--------------------------------------------------
+Simply copy the content from this config-info.yml file into your config.yml file (.../.siriproxy/config.yml).
+Maybe you like to edit some options - please read the introductions in the config-info.yml file.
+
 Requirement
 --------------------------------------------------
 This plugin makes use of Niranda's [NiraProxy](http://proxy.niranda.net), so the [SiriProxy](https://github.com/plamoni/SiriProxy) have to be connected to the internet (Port: 80).
