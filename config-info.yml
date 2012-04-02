@@ -1,12 +1,28 @@
-#Example configuration options that can be placed in your main SiriProxy config.yml
+##-> NiraProxy
+ #-> Version: 0.5.0
 
-##########################
-#NOTICE: Modifying these options in this file has no effect. You must put them in SiriProxy's config.yml!
-##########################
+##-> How to install
+ #-> Please copy this filecontent into your SiriProxy config-file (.../.siriproxy/config.yml)
+ #-> Maybe you have to edit some following options. If you are unsure leave it as it is or your SiriProxy will crash.
+ 
+##-> Parameterdiscription
+ #-> You can change the following values - be patient!
+ #->
+ #-> auth_level			- The level of privateness (don't work in NiraProxy v0.5.0)
+ #-> siriproxy_id		- a unique ID for your SiriProxy (like a username)
+ #-> siriproxy_secret	- a secret for your ID (like a password)
+ #-> remind_on_update	- true: NiraProxy stop working and remind you to update this Plugin (default value)
+ #->					  false: NiraProxy still works while the version is out of date. But maybe the Server will crash - be carefull!
+ #-> language			- Your language which NiraProxy have to know to work perfectly and to push the right answerlanguage to your mobile ;)
+ #->						Value	Language
+ #->						----------------------------------------------
+ #->						de-de	German (Germany)
+ #->						en-us	English (United States) (still in dev)
     
     - name: 'NiraProxy'
       git: 'git://github.com/Niranda/SiriProxy-NiraProxy.git'
       auth_level: '0'
-      user_id: 'default'
-      user_secret: 'default'
-      remind_on_update: true
+      siriproxy_id: 'default'
+      siriproxy_secret: 'default'
+      remind_on_update: 'true'
+      language: 'de-de'
